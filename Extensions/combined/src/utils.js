@@ -130,6 +130,12 @@ function cLog(message, writer) {
 function getColorFromTheme(voteIsLike) {
   let colorString;
   switch (extConfig.colorTheme) {
+    case "green fire":
+      if (voteIsLike === true){
+        colorString = "mintgreen";
+      }else{
+        colorString = "magenta"
+      }
     case "accessible":
       if (voteIsLike === true) {
         colorString = "dodgerblue";
